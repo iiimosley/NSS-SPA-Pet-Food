@@ -1,0 +1,87 @@
+$sunny: rgb(255, 255, 140);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../background.jpg');
+    background-size: cover;
+}
+
+#companyName {
+    padding: 2.4vw;
+    font-family: 'Bungee', Helvetica, serif;
+    text-align: center;
+    letter-spacing: .7vw;
+    color: $sunny;
+    border-bottom: 1.3vw ridge skyblue;
+    background: darkred;
+}
+
+#foodGrid {
+    width: 70%;
+    margin: 4em auto;
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+    grid-gap: 4vw;
+    font-family: 'Cairo', Helvetica, sans-serif;
+}
+
+#foodGrid > div {
+    display: grid;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 1.3vw;
+}
+
+.brandName {
+    text-align: center;
+    color: $sunny;
+    background: repeating-radial-gradient(circle at center 250%, rgba(14,14,14,1) 7vw, rgba(216,101,69,.8) 7.3vw);
+    border-top-left-radius: 1.3vw;
+    border-top-right-radius: 1.3vw;
+}
+
+h3 {
+    font-size: 2.8vw;
+    text-shadow: 3px 3px 4px black,
+                -3px -3px 4px black,
+                3px -3px 4px black,
+                -3px 3px 4px black;
+    margin: 1vw auto;
+
+}
+
+h4 {
+    padding: 1vw 3vw;
+    font-size: 2.2vw;
+    font-style: italic;
+    text-decoration: double underline;
+    letter-spacing: .3vw;
+}
+
+li {
+    font-size: 1.9vw;
+    padding: 1.3vw 6vw;
+    list-style-type: circle;
+    letter-spacing: .1vw;
+}
+
+.weight {
+    display: inline-block;
+    margin-left: -1.2vw;
+    margin-right: .3vw;    
+    font-size: 2.1vw;
+    font-weight: 700;
+}
+
+li:last-child {
+    margin-bottom: 3vw;
+}
+
+@media (max-width: 800px) {
+    #foodGrid {
+        width: 85%;
+    }
+}
