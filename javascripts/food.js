@@ -3,6 +3,7 @@ let food = require('./getFood');
 let output = document.getElementById('foodGrid');
 
 function printDogFood(dog) {
+    console.log(dog);
     for (let i = 0; i < dog.length; i++) {
         output.innerHTML += 
         `<div id="dogBrand${[i+1]}">

@@ -54,7 +54,7 @@ h3 {
 }
 
 h4 {
-    padding: 1vw 3vw;
+    padding: 0 2vw;
     font-size: 2.2vw;
     font-style: italic;
     text-decoration: double underline;
@@ -63,7 +63,7 @@ h4 {
 
 li {
     font-size: 1.9vw;
-    padding: 1.3vw 6vw;
+    padding: .6vw 6vw;
     list-style-type: circle;
     letter-spacing: .1vw;
 }
@@ -77,7 +77,7 @@ li {
 }
 
 li:last-child {
-    margin-bottom: 3vw;
+    margin-bottom: 2vw;
 }
 
 @media (max-width: 800px) {
